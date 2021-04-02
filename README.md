@@ -21,6 +21,10 @@ Install the required libraries (be sure that you're using pip 3.9!), you can als
 
 Change the config.py according to your needs
 
+Put the pictures in each "originals/" folder inside the subject folder
+
+Rename each picture to the question you want have as the active recall question (keep the extension as it is).
+
 Simply run the script (be sure that you're using python 3.9!):
     
     python create_flashcards.py
@@ -46,7 +50,7 @@ The script expects something like this:
     │       └── compressed
     └── ...
 
-The program will search in the college folder for every subject folders you have selected in the config.py file, then it will check inside the subject directories for a folder named 'pictures_flashcard' there should be two subfolders inside this one: one containing every picture you want to convert into a flashcard and another one will contain the compressed pictures created by the script (it should be empty if you didn't create any flashcards yet).
+The program will search in the college folder for every subject folders you have selected in the config.py file, then it will check inside the subject directories for a folder named 'pictures_flashcard' there should be two subfolders inside this one: one containing every picture you want to convert into a flashcard and another one will contain the compressed pictures created by the script (it should be empty if you didn't create any flashcards yet). The flashcards created will have their name as the active recall question.
 
 You can change the folder names (and structure!) in the config.py file
 
@@ -56,7 +60,7 @@ You can change the folder names (and structure!) in the config.py file
 
 * **FOLDERS**: these are the subject directories inside the **PATH** directory
 
-* **SUBJECTS_ACRONYMS**: there are the subject acronyms for each subject, be aware that they are assigned with the same order as the **FOLDER** variable
+* **SUBJECTS_ACRONYMS**: these are the subject acronyms for each subject, be aware that they are assigned with the same order as the **FOLDER** variable
 
     e.g.: if **FOLDERS** is: ['subject1/', 'subject2/', 'subject3/'] and **SUBJECTS_ACRONYMS** is: ['SUBJ1', 'SUBJ2', 'SUBJ3'], then 'subject1' will have the acronym SUBJ1, subject2 will have the acronym SUBJ2 etc...
     
