@@ -50,7 +50,7 @@ The program will search in the college folder for every subject folders you have
 
 You can change the folder names (and structure!) in the config.py file
 
-## The config.py file
+## Configuration file (config.py)
 
 * **PATH**: this is the relative path to the 'college' directory from the folder you're running the script in
 
@@ -62,13 +62,13 @@ You can change the folder names (and structure!) in the config.py file
     
     The acronyms are used in Neuracache to distinguish between different subjects, if you don't use Neuracache you still need to put a list of strings with at least as many entries as the **FOLDERS** list
 
-* **IMG_FOLDER_PATH**: this is the name of the folder inside each direectory in **FOLDERS**, containing the original and compressed pictures that we want to create flashcards from
+* **IMG_FOLDER_PATH**: this is the name of the folder inside each directory in **FOLDERS**, containing the original and compressed pictures that we want to create flashcards from
 
 * **ORIGINAL_IMGS_FOLDER_NAME** and **COMPRESSED_IMGS_FOLDER_NAME**: the name of the originals and compressed folder inside the **IMG_FOLDER_PATH** folder
 
 * **FLASHCARD_FILE_NAME_GENERATOR**: this is the basename of the markdown file containing the flashcards, this will be created inside each folder in **FOLDERS**, when its size is greater than **MAX_FLASHCARD_FILE_SIZE** a second file named **FLASHCARD_FILE_NAME_GENERATOR**02.md will be created (the same applies for **FLASHCARD_FILE_NAME_GENERATOR**02.md, **FLASHCARD_FILE_NAME_GENERATOR**03.md etc...)
 
-* **QUALITY**: integer number between 0 and 100, this is the quality of the compression, a number between 25 and 50 should be fine
+* **QUALITY**: integer number between 0 and 100, this is the quality of the compression, a number between 25 and 50 should be fine, the higher the number the closer to the originals the compressed picture will be
 
 * **BASEHEIGHT**: this is the height to which each picture will be scaled down to during compression in order to avoid vertical scrolling during review in Neuracache. On my phone 330 works fine, experiment with it and see what works for you. Bigger phones should be able go higher than that whereas smaller phones may need to go down.
 
