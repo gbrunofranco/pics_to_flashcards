@@ -29,22 +29,22 @@ Simply run the script (be sure that you're using python 3.9!):
 ## Folders Structure
 The script expects something like this:
 
-college
-├── subject1
-│   └── pictures_flashcard
-│       ├── originals
-|       |   ├── pic1.png
-|       |   ├── pic2.png
-|       |   └── ...
-│       └── compressed
-├── subject2
-│   └── pictures_flashcard
-│       ├── originals
-|       |   ├── pic1.png
-|       |   ├── pic2.png
-|       |   └── ...
-│       └── compressed
-└── ...
+    college
+    ├── subject1
+    │   └── pictures_flashcard
+    │       ├── originals
+    |       |   ├── pic1.png
+    |       |   ├── pic2.png
+    |       |   └── ...
+    │       └── compressed
+    ├── subject2
+    │   └── pictures_flashcard
+    │       ├── originals
+    |       |   ├── pic1.png
+    |       |   ├── pic2.png
+    |       |   └── ...
+    │       └── compressed
+    └── ...
 
 The program will search in the college folder for every subject folders you have selected in the config.py file, then it will check inside the subject directories for a folder named 'pictures_flashcard' there should be two subfolders inside this one: one containing every picture you want to convert into a flashcard and another one will contain the compressed pictures created by the script (it should be empty if you didn't create any flashcards yet).
 
